@@ -21,7 +21,6 @@ def main():
             elif purchase_notified == True:
                 pass
         elif purchase_closed == True:
-            SMS.sendSMS('TEST', f'PURCHASE CLOSED \n\n{purchase_url}', '5034535511@tmomail.net')
             purchase_notified = False
 
         if auction_closed == False:
@@ -32,7 +31,6 @@ def main():
             elif auction_notified == True:
                 pass
         elif auction_closed == True:
-            SMS.sendSMS('TEST', f'AUCTION CLOSED \n\n{purchase_url}', '5034535511@tmomail.net')
             auction_notified = False
         sleep(60)
 
